@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="modone">
+    
+    <head >
+        <script src="js/libs/angular.min.js"></script>
+        <script src="js/libs/angular-route.js"></script>
+        <script src="js/libs/appmodule.js"></script>
+        
+         <link rel="stylesheet" href="css/bootstrap.css">
+        <title>Blueprints ._.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    {{3*3*3}}
+    <body ng-controller="plan_control">
+            <select ng-model="lista">
+                <option  ng-repeat="o in plano" value="{{o}}"> {{o}} </option>
+            </select>
+             <input type="submit" value="Enviar" ng-click ="loadData()"/>
+    </body>
+</html>
